@@ -50,11 +50,15 @@ let elSpan = document.querySelector(".span");
 let travelSum = +prompt("Summani kiriting");
 let elDollar = (750 * 11000)
 let elEvro = (120 * 12200)
+let elSum = travelSum.value;
+
 
 if (elDollar + elEvro <= travelSum) {
     elSpan.textContent = ("Sayohatga chiqing");
 } else if (isNaN(travelSum) == true) {
-    elSpan.textContent = ("Son kiriting");
-} else{
+    elSpan.textContent = ("Iltimos raqam kiriting");
+} else if (travelSum == " ") {
+    elSpan.textContent = ("Katakni bo'sh qoldirmang");
+} else {
     elSpan.textContent = ("Sayohatga chiqmang");
 }
