@@ -49,7 +49,7 @@
 let elSpan = document.querySelector(".span");
 let travelSum = +prompt("Summani kiriting");
 let elDollar = (750 * 11000)
-let elEvro = (120 * 10900)
+let elEvro = (120 * 12200)
 
 if (elDollar + elEvro <= travelSum) {
     elSpan.textContent = ("Sayohatga chiqing");
